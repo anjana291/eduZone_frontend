@@ -1,0 +1,13 @@
+.ulist {
+    flex: 1;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.list {
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
