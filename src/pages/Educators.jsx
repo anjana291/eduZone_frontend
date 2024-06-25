@@ -1,12 +1,12 @@
-import React from 'react'
-import Footer from '../components/Footer'
-import { Col, Row } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFilter, faSearch } from '@fortawesome/free-solid-svg-icons'
+import React from 'react'
+import { Col, Row } from 'react-bootstrap'
 import EnrollCard from '../components/EnrollCard'
-import styles from './courses.module.css'
+import Footer from '../components/Footer'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import EducatorCard from '../components/EducatorCard'
 
-function Courses() {
+function Educators() {
   return (
     <>
         <div className='w-100 mt-5' style={{minHeight:'80vh'}}>
@@ -15,14 +15,13 @@ function Courses() {
           <div className="col-md-4 d-flex justify-content-center">
           <input type="text" placeholder='Search' className='form-control w-75'/>
               <FontAwesomeIcon icon={faSearch} style={{marginTop:'12px', marginLeft:'-30px',cursor:'pointer'}}/>
-              <button className='btn btn-success ms-4'><FontAwesomeIcon icon={faFilter}/></button>
           </div>
           <div className="col-md-4"></div>
             </div>
 
           <Row className='mt-5 ms-2'>
             <Col sm={12} md={6} lg={4} className='p-3 mt-2 mb-5'>
-            <EnrollCard/>
+            <EducatorCard/>
             </Col>
           </Row>
         </div>
@@ -31,4 +30,4 @@ function Courses() {
   )
 }
 
-export default Courses
+export default Educators

@@ -9,18 +9,18 @@ function UploadCourse() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-  return (
-    <>
+    return (
+        <>
 
-<button className='btn btn-primary' onClick={handleShow}>Upload New Course</button>
-        
-         <Modal show={show} onHide={handleClose}>
+            <button className='btn' style={{ backgroundColor: '#7953d1', color: 'white' }} onClick={handleShow}>Upload New Course</button>
+
+            <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Upload New Course</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                <Row>
-                       
+                    <Row>
+
                         <Col sm={12} md={12}>
                             <form className='ms-3'>
                                 <div className='mb-3'>
@@ -32,19 +32,19 @@ function UploadCourse() {
                                 </div>
 
                                 <div className='mb-3'>
-                                    <input type="text" placeholder='Duration'  className='form-control w-100' />
+                                    <input type="text" placeholder='Duration' className='form-control w-100' />
                                 </div>
 
                                 <div className='mb-3'>
-                                    <input type="text" placeholder='Prerequisites'className='form-control w-100'/>
+                                    <input type="text" placeholder='Prerequisites' className='form-control w-100' />
                                 </div>
 
                                 <div className='mb-3'>
-                                    <input type="text" placeholder='Tags'className='form-control w-100'/>
+                                    <input type="text" placeholder='Tags' className='form-control w-100' />
                                 </div>
 
                                 <div className='mb-3'>
-                                    <input type="text" placeholder='Language'className='form-control w-100'/>
+                                    <input type="text" placeholder='Language' className='form-control w-100' />
                                 </div>
 
                                 {/* <label htmlFor='image'>
@@ -55,17 +55,17 @@ function UploadCourse() {
                                  </label> */}
 
                                 <div className='mb-3'>
-                                <textarea rows={2} placeholder='Course Description' className='form-control w-100' ></textarea>
+                                    <textarea rows={2} placeholder='Course Description' className='form-control w-100' ></textarea>
                                 </div>
 
                                 <div className='mb-3'>
-                                <textarea rows={2} placeholder='Learning Objective' className='form-control w-100' ></textarea>
+                                    <textarea rows={2} placeholder='Learning Objective' className='form-control w-100' ></textarea>
                                 </div>
 
                             </form>
                         </Col>
                     </Row>
-                    
+
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
@@ -76,8 +76,8 @@ function UploadCourse() {
                     </Button>
                 </Modal.Footer>
             </Modal>
-    </>
-  )
+        </>
+    )
 }
 
 export default UploadCourse

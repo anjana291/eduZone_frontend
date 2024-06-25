@@ -10,4 +10,22 @@
     margin: 10px 20px;
     cursor: pointer;
     text-decoration: none;
+    padding: 6px 20px;
+    border-radius: 20px;
+    color: #7953d1;
+    /* background-color: red; */
+}
+.buttn{
+    cursor: pointer;
+    color: #fff;
+    background-color: #7953d1;
+}
+.buttn:hover{
+    background-color: #613cb5;
+    color: #fff;
+}
+
+.list:hover{
+  background-color: #613cb5;
+  color: #fff;
 }

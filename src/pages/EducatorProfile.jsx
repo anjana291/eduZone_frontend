@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { Button, Col, Modal, Row } from 'react-bootstrap'
 import styles from './educatorprofile.module.css'
+import { Link } from 'react-router-dom'
 
 
 function EducatorProfile() {
@@ -16,13 +17,13 @@ function EducatorProfile() {
             <div className='rounded-3' style={{ overflowX: 'hidden', margin: '10px 10px 10px 10px', backgroundColor: '#f5f5f5' }}>
                 <Row>
                     <Col sm={12} md={2}>
-                        <div className='bg-secondary m-3 rounded-3 d-flex flex-column ' style={{ width: '100%', height: '550px' }}>
-                            <h2 className='mt-2'>eduZone</h2>
+                        <div className='m-3 rounded-3 d-flex flex-column align-items-center' style={{ width: '100%', height: '550px',backgroundColor:'#28104e' }}>
+                           <Link to={'/'}> <h2 className='mt-2'>eduZone</h2></Link>
                             <div>
-                                <h4>Dashboard</h4>
+                                <Link to={'/teacherdash'}><h5>Dashboard</h5></Link>
                             </div>
                             <div>
-                                <h4> Profile</h4>
+                                <Link to={'/teacherprofile'}><h5> Profile</h5></Link>
                             </div>
 
                         </div>
@@ -30,9 +31,9 @@ function EducatorProfile() {
                     </Col>
                     <Col sm={12} md={10}>
 
-                        <div className='my-3 mx-2 rounded-3 bg-success d-flex' style={{ width: '98%', height: '550px' }}>
+                        <div className='my-3 mx-2 rounded-3 d-flex' style={{ width: '98%', height: '550px' }}>
                             <div style={{ width: '70%', height: '550px' }}>
-                                <div className='bg-primary m-3 rounded-3 d-flex' style={{ width: '98%', minHeight: '130px' }}>
+                                <div className='mx-2 rounded-3 d-flex' style={{ width: '98%', minHeight: '130px',backgroundColor:'#deacf5' }}>
                                     <div className='mt-3'>
                                         <h5 className='mt-2 ms-2'>Educational Background</h5>
                                         <div className='ms-2 mt-2'>
@@ -110,7 +111,7 @@ function EducatorProfile() {
                                     
                                  </div>   Required div  */}
 
-                                <div className='m-3 bg-danger rounded-3 p-3' style={{ width: '98%', minHeight: '250px' }}>
+                                <div className='my-3 mx-2 rounded-3 p-3' style={{ width: '98%', minHeight: '250px',backgroundColor:'white' }}>
                                     <Row className=''>
                                         <Col sm={12} md={8}>
                                             <div>
@@ -125,12 +126,12 @@ function EducatorProfile() {
 
                                         <Col sm={12} md={4}>
                                             <div className='d-flex flex-column'>
-                                                <div className='bg-secondary rounded-3' style={{ height: '100px' }}>
+                                                <div className='rounded-3' style={{ height: '100px' ,border:'2px solid #613cb5'}}>
                                                     <h5 className='text-center mt-2'>Total Students</h5>
                                                     <p style={{ fontSize: '38px' }} className='text-center'>12</p>
                                                 </div>
 
-                                                <div className='bg-secondary rounded-3 mt-3' style={{ height: '100px' }}>
+                                                <div className='rounded-3 mt-3' style={{ height: '100px',border:'2px solid #613cb5' }}>
                                                     <h5 className='text-center mt-2'>Total Course</h5>
                                                     <p style={{ fontSize: '38px' }} className='text-center'>2</p>
                                                 </div>
@@ -145,11 +146,11 @@ function EducatorProfile() {
                             </div>
 
 
-                            <div className='bg-warning m-3 rounded-3 d-flex flex-column ' style={{ width: '30%', height: '510px' }}>
+                            <div className='mx-3 rounded-3 d-flex flex-column ' style={{ width: '30%', height: '510px',backgroundColor:'white' }}>
                                 <div className='d-flex flex-column align-items-center'>
                                     <img src="https://static1.squarespace.com/static/656f4e4dababbd7c042c4946/657236350931ee4538eea52c/65baf15103d8ad2826032a8a/1707422532886/how-to-stop-being-a-people-pleaser-1_1.jpg?format=1500w" alt=""
                                         style={{ borderRadius: '50%', margin: '10px', width: '200px' }} />
-                                    <h4>Name LastName</h4>
+                                    <h4 style={{color:'#6237A0'}}>Name LastName</h4>
                                 </div>
                                 <div className='text-start mt-3 ms-2 d-flex flex-column'>
                                     <h5>Contact Info</h5>

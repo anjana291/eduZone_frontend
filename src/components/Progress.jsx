@@ -9,9 +9,9 @@ function Progress() {
         <CircularProgressbar value={percentage} text={`${percentage}%`} 
         styles={buildStyles({
             textSize: '24px', 
-            pathColor: '#76c7c0',
-            textColor: '#76c7c0',
-            trailColor: '#e0e0e0',
+            pathColor: '#28104e',
+            textColor: '#28104e',
+            trailColor: '#deacf5',
           })}/>
     </div>
   )

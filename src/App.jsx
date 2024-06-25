@@ -9,6 +9,8 @@ import EducatorDash from './pages/EducatorDash';
 import StudentProfile from './pages/StudentProfile';
 import Home from './pages/Home';
 import Courses from './pages/Courses';
+import CoursesList from './components/CoursesList';
+import Educators from './pages/Educators';
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/courses' element={<Courses/>}/>
+        <Route path='/course/id' element={<CoursesList/>}/>
         <Route path='/studentdash' element={<Dashboard/>}/>
         <Route path='/teacherdash' element={<EducatorDash/>}/>
         <Route path='/admindash' element={<Admin/>}/>
@@ -24,6 +27,8 @@ function App() {
         <Route path='/register' element={<Auth register/>}/>
         <Route path='/teacherprofile' element={<EducatorProfile/>}/>
         <Route path='/studentprofile' element={<StudentProfile/>}/>
+        <Route path='/teachers' element={<Educators/>}/>
+      
 
         {/* <Route path='/uploadcourse' element={<UploadCourse/>}/> */}
       </Routes>
